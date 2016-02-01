@@ -14,15 +14,20 @@ public class BiomeRegistry {
 	}
 	
 	public static BiomeGenBase biomeVolcanic;
+	public static BiomeGenBase biomeIronwoodForest;
 	
 	public static void initializeBiome()
 	{
 		biomeVolcanic = new BiomeGenVolcanic(100).setBiomeName("Volcanic");
+		biomeIronwoodForest = new BiomeGenIronwoodForest(101).setBiomeName("Ironwood Forest");
 	}
 	
 	public static void registerBiome()
 	{
 		BiomeDictionary.registerBiomeType(biomeVolcanic, Type.FOREST);
 		BiomeManager.addSpawnBiome(biomeVolcanic);
+		
+		BiomeDictionary.registerBiomeType(biomeIronwoodForest, Type.FOREST);
+		BiomeManager.addSpawnBiome(biomeIronwoodForest);
 	}
 }

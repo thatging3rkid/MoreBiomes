@@ -43,6 +43,7 @@ public class ModdedGenLayerBiome extends GenLayer
             biomes[desertIdx].add(new BiomeEntry(BiomeGenBase.plains, 10));
             biomes[desertIdx].add(new BiomeEntry(BiomeGenBase.taiga, 10));
             biomes[desertIdx].add(new BiomeEntry(BiomeRegistry.biomeVolcanic, 10));
+            biomes[desertIdx].add(new BiomeEntry(BiomeRegistry.biomeIronwoodForest, 10));
         }
         else
         {
@@ -50,6 +51,7 @@ public class ModdedGenLayerBiome extends GenLayer
             biomes[desertIdx].add(new BiomeEntry(BiomeGenBase.savanna, 20));
             biomes[desertIdx].add(new BiomeEntry(BiomeGenBase.plains, 10));
             biomes[desertIdx].add(new BiomeEntry(BiomeRegistry.biomeVolcanic, 10));
+            biomes[desertIdx].add(new BiomeEntry(BiomeRegistry.biomeIronwoodForest, 10));
         }
     }
 
