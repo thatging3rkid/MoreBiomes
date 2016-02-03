@@ -1,4 +1,4 @@
-/*package com.canadianwurbokid.morebiomes.blocks;
+package com.canadianwurbokid.morebiomes.blocks;
 
 import java.util.Random;
 
@@ -35,4 +35,4 @@ public class IronwoodSapling extends BlockFlower {
 		
 	}
 	
-}*/
+}
