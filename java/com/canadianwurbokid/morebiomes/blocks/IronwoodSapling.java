@@ -29,7 +29,7 @@ public class IronwoodSapling extends BlockFlower {
 				world.setBlockMetadataWithNotify(i, j, k, l | 8, 1);
 			}
 			else {
-				growTree(world, i, j, k, random);
+				//growTree(world, i, j, k, random);
 			}
 		}
 		

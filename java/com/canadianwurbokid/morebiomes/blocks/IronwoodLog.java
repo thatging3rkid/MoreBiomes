@@ -35,6 +35,7 @@ public class IronwoodLog extends Block{
 	/**
 	* Called when a block is placed using its ItemBlock. Args: World, X, Y, Z, side, hitX, hitY, hitZ, block metadata
 	*/
+	@Override
 	public int onBlockPlaced(World par1World, int par2, int par3, int par4, int par5, float par6, float par7, float par8, int par9)
 	{
 	int j1 = par9 & 3;
@@ -72,14 +73,16 @@ public class IronwoodLog extends Block{
 	}
 
 	/** gets the icon **/
+	@Override
 	public IIcon getIcon(int par1, int par2)
 	{
 	return par1 == 1 ? this.iconLogTop : (par1 == 0 ? this.iconLogBottom : this.blockIcon);
 	}
 
 	@SideOnly(Side.CLIENT)
+	@Override
 	/** Register Icons for this block used in method above **/
-	public void registerIcons(IIconRegister par1IconRegister)
+	public void registerBlockIcons(IIconRegister par1IconRegister)
 	{
 	/** change the "Ironwood:LogSide,LogTop to your texture names **/
 	this.blockIcon = par1IconRegister.registerIcon("morebiomes:IronwoodLogSide");
