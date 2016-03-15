@@ -9,7 +9,7 @@ public class BiomeRegistry {
 
 	public static void Main()
 	{
-		initializeBiome();//pls no more
+		initializeBiome();
 		registerBiome();
 	}
 	
