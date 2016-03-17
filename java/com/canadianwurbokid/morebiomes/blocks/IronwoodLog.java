@@ -6,20 +6,20 @@ import com.canadianwurbokid.morebiomes.Main;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.block.Block;
+import net.minecraft.block.BlockRotatedPillar;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 
-public class IronwoodLog extends Block{
+public class IronwoodLog extends BlockRotatedPillar{
 
 	public static final String[] woodType = new String[] {"Ironwood"};
 	@SideOnly(Side.CLIENT)
 	private IIcon iconLogTop;
 	@SideOnly(Side.CLIENT)
-	private IIcon iconLogBottom;
+	//private IIcon iconLogBottom;
 	private int blockID;
 
 	public IronwoodLog(String unlocalizedName, Material material)
@@ -32,10 +32,22 @@ public class IronwoodLog extends Block{
 	this.setBlockName(unlocalizedName);
 	}
 
+	@Override
+	protected IIcon getSideIcon(int p_150163_1_) {
+		// TODO Auto-generated method stub
+		return this.blockIcon;
+	}
+	
+	@Override
+	protected IIcon getTopIcon(int p_150161_1_)
+    {
+        return this.iconLogTop;
+    }
+
 	/**
 	* Called when a block is placed using its ItemBlock. Args: World, X, Y, Z, side, hitX, hitY, hitZ, block metadata
 	*/
-	@Override
+	/*@Override
 	public int onBlockPlaced(World par1World, int par2, int par3, int par4, int par5, float par6, float par7, float par8, int par9)
 	{
 	int j1 = par9 & 3;
@@ -55,39 +67,39 @@ public class IronwoodLog extends Block{
 	b0 = 4;
 	}
 	return j1 | b0;
-	}
+	}*/
 
 	/**
 	* Returns the ID of the items to drop on destruction.
 	*/
-	public int idDropped(int par1, Random par2Random, int par3)
+	/*public int idDropped(int par1, Random par2Random, int par3)
 	{
 	return this.blockID;
-	}
+	}*/
 	/**
 	* Returns the quantity of items to drop on block destruction.
 	*/
-	public int quantityDropped(Random par1Random)
+	/*public int quantityDropped(Random par1Random)
 	{
 	return 1;
-	}
+	}*/
 
 	/** gets the icon **/
-	@Override
+	/*@Override
 	public IIcon getIcon(int par1, int par2)
 	{
 	return par1 == 1 ? this.iconLogTop : (par1 == 0 ? this.iconLogBottom : this.blockIcon);
-	}
+	}*/
 
-	@SideOnly(Side.CLIENT)
-	@Override
+	/*@SideOnly(Side.CLIENT)
+	@Override*/
 	/** Register Icons for this block used in method above **/
 	public void registerBlockIcons(IIconRegister par1IconRegister)
 	{
 	/** change the "Ironwood:LogSide,LogTop to your texture names **/
 	this.blockIcon = par1IconRegister.registerIcon("morebiomes:IronwoodLogSide");
 	this.iconLogTop = par1IconRegister.registerIcon("morebiomes:IronwoodLogTop");
-	this.iconLogBottom = par1IconRegister.registerIcon("morebiomes:IronwoodLogTop");
+	//this.iconLogBottom = par1IconRegister.registerIcon("morebiomes:IronwoodLogTop");
 	}
 
 	public boolean canSustainLeaves(World world, int x, int y, int z)
@@ -99,4 +111,14 @@ public class IronwoodLog extends Block{
 	{
 	return true;
 	}
+	
+	//@SideOnly(Side.CLIENT)
+	/**
+	* returns a list of blocks with the same ID, but different meta (eg: wood returns 4 blocks)
+	*/
+	/*public void getSubBlocks(int par1, CreativeTabs par2CreativeTabs, List par3List)
+	{
+	par3List.add(new ItemStack(par1, 1, 0));
+	}
+	}*/
 }
