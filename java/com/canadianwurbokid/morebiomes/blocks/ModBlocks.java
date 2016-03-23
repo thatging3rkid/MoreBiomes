@@ -8,10 +8,12 @@ public class ModBlocks {
 
 	public static Block IronwoodLog;
 	public static Block IronwoodLeaves;
+	public static Block Basalt;
 	
 	public static final void init() {
 
 		GameRegistry.registerBlock(IronwoodLog = new IronwoodLog("IronwoodLog", Material.wood), "IronwoodLog");
 		GameRegistry.registerBlock(IronwoodLeaves = new IronwoodLeaves("IronwoodLeaves"), "IronwoodLeaves");
+		GameRegistry.registerBlock(Basalt = new Basalt("Basalt", Material.rock), "Basalt");
     }
 }
