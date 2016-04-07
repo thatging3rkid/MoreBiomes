@@ -112,6 +112,8 @@ public class IronwoodLog extends BlockRotatedPillar{
 	return true;
 	}
 	
+	
+	
 	//@SideOnly(Side.CLIENT)
 	/**
 	* returns a list of blocks with the same ID, but different meta (eg: wood returns 4 blocks)

@@ -13,7 +13,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.util.IIcon;
 public class IronwoodLeaves extends BlockLeaves
 {
-	private int blockID;
+	private static int blockID;
 public IronwoodLeaves(String unlocalizedName)
 {
 super();
@@ -58,5 +58,9 @@ public IIcon getIcon(int p_149691_1_, int p_149691_2_) {
 public String[] func_150125_e() {
 	// TODO Auto-generated method stub
 	return null;
+}
+public static int getID()
+{
+	return blockID;
 }
 }
