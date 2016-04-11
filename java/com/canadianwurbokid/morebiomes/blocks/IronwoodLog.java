@@ -10,8 +10,11 @@ import net.minecraft.block.BlockRotatedPillar;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
 import net.minecraft.util.IIcon;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraftforge.common.util.ForgeDirection;
 
 public class IronwoodLog extends BlockRotatedPillar{
 
@@ -101,7 +104,7 @@ public class IronwoodLog extends BlockRotatedPillar{
 	this.iconLogTop = par1IconRegister.registerIcon("morebiomes:IronwoodLogTop");
 	//this.iconLogBottom = par1IconRegister.registerIcon("morebiomes:IronwoodLogTop");
 	}
-
+	
 	public boolean canSustainLeaves(World world, int x, int y, int z)
 	{
 	return true;
@@ -111,7 +114,14 @@ public class IronwoodLog extends BlockRotatedPillar{
 	{
 	return true;
 	}
-	
+	public int getFlammability(IBlockAccess world, int x, int y, int z, ForgeDirection face)
+    {
+        return 150;
+    }
+	public int getFireSpreadSpeed(IBlockAccess world, int x, int y, int z, ForgeDirection face)
+    {
+        return 50;
+    }
 	
 	
 	//@SideOnly(Side.CLIENT)
