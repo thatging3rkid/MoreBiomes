@@ -33,6 +33,7 @@ public class IronwoodLog extends BlockRotatedPillar{
 	this.setHardness(2.0F);
 	this.setBlockTextureName(Main.MODID + ":" + unlocalizedName);
 	this.setBlockName(unlocalizedName);
+	this.setHarvestLevel("axe", 1);
 	}
 
 	@Override

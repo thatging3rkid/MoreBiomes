@@ -10,6 +10,7 @@ public class ModBlocks {
 	public static Block IronwoodLeaves;
 	public static Block Basalt;
 	public static Block IronwoodSapling;
+	public static Block IronwoodPlank;
 	
 	public static final void init() {
 
@@ -17,5 +18,6 @@ public class ModBlocks {
 		GameRegistry.registerBlock(IronwoodLeaves = new IronwoodLeaves("IronwoodLeaves"), "IronwoodLeaves");
 		GameRegistry.registerBlock(Basalt = new Basalt("Basalt", Material.rock), "Basalt");
 		GameRegistry.registerBlock(IronwoodSapling = new IronwoodSapling(100127), "IronwoodSapling");
+		GameRegistry.registerBlock(IronwoodPlank = new IronwoodPlank("IronwoodPlank", Material.wood), "IronwoodPlank");
     }
 }
