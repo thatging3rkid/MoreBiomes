@@ -13,7 +13,7 @@ public class ModCrafting {
 	public static final void init(){
 		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.IronwoodPlank, 4), new Object[] {ModBlocks.IronwoodLog});
 		GameRegistry.addRecipe(new ItemStack(Blocks.crafting_table), "##", "##", '#', ModBlocks.IronwoodPlank);
-		GameRegistry.addSmelting(ModBlocks.IronwoodLog, new ItemStack(Items.coal), 0.7F);
+		GameRegistry.addSmelting(ModBlocks.IronwoodLog, new ItemStack(Items.coal, 1, 1), 0.7F);
 		GameRegistry.addRecipe(new ItemStack(Items.stick), "#", "#", '#', ModBlocks.IronwoodPlank);
 		GameRegistry.addRecipe(new ItemStack(ModItems.ironwoodAxe), "##", "#I", " I", '#', ModBlocks.IronwoodPlank, 'I', Items.stick);
 		GameRegistry.addRecipe(new ItemStack(ModItems.ironwoodHoe), "##", " I", " I", '#', ModBlocks.IronwoodPlank, 'I', Items.stick);
