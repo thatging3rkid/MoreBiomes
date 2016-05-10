@@ -25,6 +25,7 @@ super(par2, Material.wood);
 this.setLightOpacity(0);
 this.setBlockName("IronwoodSlab");
 this.setBlockTextureName(Main.MODID + ":IronwoodPlank");
+this.setHarvestLevel("axe", 1);
 }
 
 public void registerIcons(IIconRegister par1IconRegister)
