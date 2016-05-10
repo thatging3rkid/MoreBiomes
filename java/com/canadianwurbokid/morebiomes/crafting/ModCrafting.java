@@ -20,6 +20,7 @@ public class ModCrafting {
 		GameRegistry.addRecipe(new ItemStack(ModItems.ironwoodPickaxe), "###", " I ", " I ", '#', ModBlocks.IronwoodPlank, 'I', Items.stick);
 		GameRegistry.addRecipe(new ItemStack(ModItems.ironwoodSpade), "#", "I", "I", '#', ModBlocks.IronwoodPlank, 'I', Items.stick);
 		GameRegistry.addRecipe(new ItemStack(ModItems.ironwoodSword), "#", "#", "I", '#', ModBlocks.IronwoodPlank, 'I', Items.stick);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.IronwoodSlab, 6), "###", "###", '#', ModBlocks.IronwoodPlank);
 		
 	}
 	
