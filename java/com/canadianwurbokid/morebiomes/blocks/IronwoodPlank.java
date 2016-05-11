@@ -15,7 +15,8 @@ public class IronwoodPlank extends Block{
 		this.setBlockName(unlocalizedName);
         this.setBlockTextureName(Main.MODID + ":" + unlocalizedName);
         this.setCreativeTab(CreativeTabs.tabBlock);
-        this.setHardness(2.0F);
+        this.setHardness(3.0F);
+        this.setResistance(22.5F);
         this.setHarvestLevel("axe", 1);
         this.setStepSound(soundTypeWood);
 		// TODO Auto-generated constructor stub

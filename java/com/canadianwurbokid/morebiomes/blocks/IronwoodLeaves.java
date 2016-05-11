@@ -24,7 +24,8 @@ public IronwoodLeaves(String unlocalizedName)
 super();
 this.setCreativeTab(CreativeTabs.tabDecorations);
 this.setStepSound(soundTypeGrass);
-this.setHardness(0.2F);
+this.setHardness(0.3F);
+this.setResistance(1.5F);
 this.setBlockName(unlocalizedName);
 this.setBlockTextureName(Main.MODID + ":" + unlocalizedName);
 }

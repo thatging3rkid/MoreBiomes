@@ -30,10 +30,11 @@ public class IronwoodLog extends BlockRotatedPillar{
 	super(material);
 	this.setCreativeTab(CreativeTabs.tabBlock);
 	this.setStepSound(soundTypeWood);
-	this.setHardness(2.0F);
+	this.setHardness(3.0F);
 	this.setBlockTextureName(Main.MODID + ":" + unlocalizedName);
 	this.setBlockName(unlocalizedName);
 	this.setHarvestLevel("axe", 1);
+	this.setResistance(15.0F);
 	}
 
 	@Override

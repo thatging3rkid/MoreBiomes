@@ -27,7 +27,8 @@ public class IronwoodSlab extends BlockSlab {
 		this.setBlockName(unlocalizedName);
 		this.setBlockTextureName(Main.MODID + ":IronwoodPlank");
         //this.setCreativeTab(CreativeTabs.tabBlock);
-        this.setHardness(2.0F);
+        this.setHardness(3.0F);
+        this.setResistance(2.3F);
         this.setHarvestLevel("axe", 1);
         this.setStepSound(soundTypeWood);
 	}
