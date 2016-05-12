@@ -38,10 +38,10 @@ public class ModCrafting {
 		GameRegistry.addRecipe(new ItemStack(Items.bed), "III", "###", '#', ModBlocks.IronwoodPlank, 'I', Blocks.wool);
 		GameRegistry.addRecipe(new ItemStack(Items.sign), "###", "###", " I ", '#', ModBlocks.IronwoodPlank, 'I', Items.stick);
 		GameRegistry.addRecipe(new ItemStack(Items.bowl), "# #", " # ", '#', ModBlocks.IronwoodPlank);
-		GameRegistry.addRecipe(new ItemStack(ModItems.ironwoodBoots), "# #", "# #", '#', ModBlocks.IronwoodPlank);
-		GameRegistry.addRecipe(new ItemStack(ModItems.ironwoodChestplate), "# #", "###", "###", '#', ModBlocks.IronwoodPlank);
-		GameRegistry.addRecipe(new ItemStack(ModItems.ironwoodHelmet), "###", "# #", '#', ModBlocks.IronwoodPlank);
-		GameRegistry.addRecipe(new ItemStack(ModItems.ironwoodLeggings), "###", "# #", "# #", '#', ModBlocks.IronwoodPlank);
+		//GameRegistry.addRecipe(new ItemStack(ModItems.ironwoodBoots), "# #", "# #", '#', ModBlocks.IronwoodPlank);
+		//GameRegistry.addRecipe(new ItemStack(ModItems.ironwoodChestplate), "# #", "###", "###", '#', ModBlocks.IronwoodPlank);
+		//GameRegistry.addRecipe(new ItemStack(ModItems.ironwoodHelmet), "###", "# #", '#', ModBlocks.IronwoodPlank);
+		//GameRegistry.addRecipe(new ItemStack(ModItems.ironwoodLeggings), "###", "# #", "# #", '#', ModBlocks.IronwoodPlank);
 
 		
 	}
