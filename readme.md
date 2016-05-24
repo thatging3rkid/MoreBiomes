@@ -1,3 +1,5 @@
-More Biomes Project
+# MoreBiomes
 
-we tried. I swear.
+A project attempting to add more biomes to Minecraft.
+
+Written in Java.
