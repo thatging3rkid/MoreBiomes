@@ -10,6 +10,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.common.MinecraftForge;
 
 @Mod(modid = Main.MODID, name = Main.MODNAME, version = Main.VERSION)
 
@@ -28,7 +29,6 @@ public class Main {
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent e){
 		proxy.preInit(e);
-
 	}
 	
 	@EventHandler
