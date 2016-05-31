@@ -1,6 +1,6 @@
 generator.MoreBiomes=MoreBiomes
 tile.IronwoodLog.name=Ironwood Log
-tile.IronwoodSapling.name=Ironwood Sapling
+tile.Sapling.Ironwood.name=Ironwood Sapling
 tile.IronwoodLeaves.name=Ironwood Leaves
 tile.IronwoodPlank.name=Ironwood Planks
 tile.Basalt.name=Basalt

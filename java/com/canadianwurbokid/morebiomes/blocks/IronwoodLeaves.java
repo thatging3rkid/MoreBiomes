@@ -72,7 +72,7 @@ public static int getID()
 @Override
 public Item getItemDropped(int p_149650_1_, Random p_149650_2_, int p_149650_3_)
 {
-	Block sapling = ModBlocks.IronwoodSapling;
+	Block sapling = ModBlocks.Saplings;
     return Item.getItemFromBlock(sapling);
 }
 public void updateTick(World p_149674_1_, int p_149674_2_, int p_149674_3_, int p_149674_4_, Random p_149674_5_)

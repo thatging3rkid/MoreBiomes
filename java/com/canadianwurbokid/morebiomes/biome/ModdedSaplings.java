@@ -169,7 +169,7 @@ public class ModdedSaplings extends BlockSapling
     {
         for (int i = 0; i < iconLength.length; ++i)
         {
-            iconLength[i] = iconRegister.registerIcon(Main.MODID + ":" + this.getUnlocalizedName().substring(0) + saplingTypes[i]);
+            iconLength[i] = iconRegister.registerIcon(Main.MODID + ":IronwoodSapling");
         }
     }
     
